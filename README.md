@@ -1,4 +1,4 @@
-# **CS598-DL4H-Reproducibility-Project
+# CS598-DL4H-Reproducibility-Project
 
 # About
 
