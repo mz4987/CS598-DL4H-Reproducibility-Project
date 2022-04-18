@@ -63,4 +63,7 @@ Navigate to the root directory, activate your conda environment with
 ```
 conda activate mimic_data_extraction
 ```
-Run`python mimic_direct_extract.py ...` with your args as desired to start data extraction
+Run`python mimic_direct_extract.py ...` with your args as desired to start data extraction.
+
+This process may take over 15 hours depending on your machine. The default setting will create an hdf5 file inside MIMIC_EXTRACT_OUTPUT_DIR with four tables.
+Use `mimic_direct_extract.ipynb` for test your output extracted by MIMIC-Extract.
