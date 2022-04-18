@@ -38,7 +38,7 @@ Aactivate your environment for following steps.
 conda activate mimic_data_extraction
 ```
 
-## Step 3: Build MIMIC-III Concepts table Views for Feature Extraction
+## Step 3: Build MIMIC-III Concepts Table Views for Feature Extraction
 
 Before working on this step, make sure you have the MIMIC PostgreSQL database generated. This includes all concept tables in [MIT-LCP Repo](https://github.com/MIT-LCP/mimic-code) 
 
@@ -56,3 +56,11 @@ bash postgres_make_extended_concepts.sh
 psql -d mimic -f niv-durations.sql
 ```
 This command will build 3 additional materialized views necessary for this pipeline. 
+
+## Step 5: Set Cohort Selection and Extraction Criteria
+
+Navigate to the root directory, activate your conda environment with
+```
+conda activate mimic_data_extraction
+```
+Run`python mimic_direct_extract.py ...` with your args as desired to start data extraction
