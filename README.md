@@ -22,4 +22,37 @@ To complete the reproduction, we need the following preparation.
 * psql (PostgreSQL 9.4 or higher)
 * git
 * MIMIC-iii psql relational database (Refer to [MIT-LCP Repo](https://github.com/MIT-LCP/mimic-code))
+* [MIT-LCP Repo](https://github.com/MIT-LCP/mimic-code) code assumed to store in the environment variable `$MIMIC_CODE_DIR`
 
+## Step 1: Create conda environment
+
+Next, make a new conda environment using [mimic_extract_env_py36.yml](../mimic_extract_env_py36.yml).
+
+```
+conda env create --force -f ../mimic_extract_env_py36.yml
+```
+If this environment fails, simply install the missing package with `pip install <package name>`and re-run the command 
+Aactivate your environment for following steps.
+
+```
+conda activate mimic_data_extraction
+```
+
+## Step 3: Build MIMIC-III Concepts table Views for Feature Extraction
+
+Before working on this step, make sure you have the MIMIC PostgreSQL database generated. This includes all concept tables in [MIT-LCP Repo](https://github.com/MIT-LCP/mimic-code) 
+
+```
+cd $MIMIC_CODE_DIR/concepts
+psql -d mimic -f postgres-functions.sql
+bash postgres_make_concepts.sh
+```
+
+## Step 4: Build Additional Tables for Feature Extraction 
+
+Navigate to `utils` folder
+```
+bash postgres_make_extended_concepts.sh
+psql -d mimic -f niv-durations.sql
+```
+This command will build 3 additional materialized views necessary for this pipeline. 
