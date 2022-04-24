@@ -12,7 +12,7 @@ Pipeline for MIMIC-III. arXiv:1907.08322.
 The ouptut of this data pipeline is provided by the authors [here](https://console.cloud.google.com/storage/browser/mimic_extract).
 
 # Pre-processed Output
-Vist [MIMIC-III doc](https://mimic.mit.edu/docs/gettingstarted/) for more information and downoad of the data.
+Vist [MIMIC-III doc](https://mimic.mit.edu/docs/gettingstarted/) for more information and downoad the data.
 
 ## Step 0: Required software and prereqs
 
