@@ -73,7 +73,7 @@ Use `mimic_direct_extract.ipynb` for test your output extracted by MIMIC-Extract
 
 # Step 6: Train Models and Evaluate Results  
 
-Models are provded in notebooks. 
+Models are provided in notebooks. 
 
 Mortality and Length-of-stay (LOS) Predictions models are demonstrated as `Baselines for Mortality and LOS prediction - Sklearn.ipynb` and `Baselines for Mortality and LOS prediction - GRU-D.ipynb`.
 
