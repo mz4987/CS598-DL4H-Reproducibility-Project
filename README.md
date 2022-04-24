@@ -67,3 +67,14 @@ Run`python mimic_direct_extract.py ...` with your args as desired to start data 
 
 This process may take over 15 hours depending on your machine. The default setting will create an hdf5 file inside MIMIC_EXTRACT_OUTPUT_DIR with four tables.
 Use `mimic_direct_extract.ipynb` for test your output extracted by MIMIC-Extract.
+
+# Step 5: Test Extraction
+`Testing mimic_direct_extract.ipynb` contains tests for different data processing funcations in **MIMIC-Extract**.
+
+# Step 5: Train Models and Evaluate Results  
+
+Models are provded in notebooks. 
+
+Mortality and Length-of-stay (LOS) Predictions models are demonstrated as `Baselines for Mortality and LOS prediction - Sklearn.ipynb` and `Baselines for Mortality and LOS prediction - GRU-D.ipynb`.
+
+Clinical Intervention Prediction models are demonstrated as `Baselines for Intervention Prediction - Mechanical Ventilation.ipynb` and `Baselines for Intervention Prediction - Vasopressor.ipynb`.
