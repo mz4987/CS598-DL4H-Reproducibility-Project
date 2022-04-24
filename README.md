@@ -71,7 +71,7 @@ Use `mimic_direct_extract.ipynb` for test your output extracted by MIMIC-Extract
 # Step 5: Test Extraction
 `Testing mimic_direct_extract.ipynb` contains tests for different data processing funcations in **MIMIC-Extract**.
 
-# Step 5: Train Models and Evaluate Results  
+# Step 6: Train Models and Evaluate Results  
 
 Models are provded in notebooks. 
 
