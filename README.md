@@ -11,8 +11,16 @@ Pipeline for MIMIC-III. arXiv:1907.08322.
 ```
 The ouptut of this data pipeline is provided by the authors [here](https://console.cloud.google.com/storage/browser/mimic_extract).
 
-# Pre-processed Output
-Vist [MIMIC-III doc](https://mimic.mit.edu/docs/gettingstarted/) for more information and downoad the data.
+# Data Download Instruction
+Vist [MIMIC-III doc](https://mimic.mit.edu/docs/gettingstarted/) for more information and downoad the data. The MIMIC-III can be downloaded by following steps.
+
+* Complete CITI training course. Select “Massachusetts Institute of Technology Affiliates” as your organization affiliation and “Data or Specimens Only Research” course.
+* Create a PhysioNet account using Illinois email.
+* File an application to be a credentialed user.
+* Upload training report.
+* Sign data use agreement.
+* Download MIMIC III database.
+
 
 ## Step 0: Required software and prereqs
 
