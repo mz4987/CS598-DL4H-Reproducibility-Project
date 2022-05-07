@@ -70,10 +70,12 @@ Use `mimic_direct_extract.ipynb` for test your output extracted by MIMIC-Extract
 
 # Step 5: Test Extraction
 `Testing mimic_direct_extract.ipynb` contains tests for different data processing funcations in **MIMIC-Extract**.
+Results of this test are shown in `Result.xlsx`.
 
 # Step 6: Train Models and Evaluate Results  
 
 Models are provided in notebooks. 
+Results of this test are shown in `Result.xlsx`.
 
 Mortality and Length-of-stay (LOS) Predictions models are demonstrated as `Baselines for Mortality and LOS prediction - Sklearn.ipynb` and `Baselines for Mortality and LOS prediction - GRU-D.ipynb`.
 
